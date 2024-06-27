@@ -26,10 +26,11 @@
         <label for="referrer">How did you hear about us?
           <select id="referrer" name="referrer">
             <option value="">(select one)</option>
-            <option value="1">freeCodeCamp News</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
+            <option value="1">Google</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Friend refferal</option>
+            <option value="4">Bing</option>
+            <option value="5">Other</option>
           </select>
         </label>
         <label for="bio">Provide a bio:
@@ -37,7 +38,7 @@
         </label>
       </fieldset>
       <label for="terms-and-conditions">
-        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www./register-newproject.com/terms-of-service/">terms and conditions</a>
       </label>
       <input type="submit" value="Submit" />
     </form>

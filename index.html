@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Registration Form</h1>
-    <p>Please fill out this form with the required information</p>
-    <form method="post" action='https://register-club.org'>
-      <fieldset>
-        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-      </fieldset>
-      <fieldset>
-        <legend>Account type (required)</legend>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
-      </fieldset>
-      <fieldset>
-        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-        <label for="referrer">How did you hear about us?
-          <select id="referrer" name="referrer">
+  </html>
+<body>
+  <div class="Questionnaire">
+    <main>
+      <head> 
+        <title> Investment tools  </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet"/>
+      </head>
+        <h1 id="title">How do you Invest?</h1>
+        <hr class="line">
+        <p class="description" id="description">Fill out the small survey to explore your investment options?- <a href="https://www.etrade.com">For more information click here</a></p>
+  <form method="post" id="survey-form" action='https://make-your-website.com'>
+      <section>
+        <h2>Your personal information</h2>
+        <div>
+        <label for="first-name" id="name-label">Enter Your First Name <input id="name" name="first-name" type="text" placeholder="name" required style="width:700px; height: 28px" /></label>
+        </div>
+        <div>
+        <label for="last-name" id="name-label">Enter Your Last Name: <input type="text" name="Last Name" placeholder=" Last Name" required style="width:700px; height: 28px"></label>
+        </div>
+         <div>
+        <label for="email" id="email-label">Please enter your email<input type="email" name="Email" placeholder="Email" id="email" required style="width:700px; height: 28px">
+        </div>
+         <div>
+       <label for="number" id="number-label">Please enter your phone number<input type="number" name="Phone number" placeholder="Phone number" id="number" min="7" max="13" required style="width:700px; height: 28px"></label>
+        </div>
+         <label for="referrer">How often do you invest?
+          <select id="dropdpwn" name="referrer">
             <option value="">(select one)</option>
-            <option value="1">Google</option>
-            <option value="2">YouTube Channel</option>
-            <option value="3">Instagram</option>
-            <option value="4">Other</option>
+            <option value="1">Once in 6-9 months</option>
+            <option value="2">Once in 3-6 months</option>
+            <option value="3">Every 1-2 months</option>
+            <option value="4">Every month</option>
+            <option value="5">Multiple times month</option>
+            <option value="6">Other</option>
           </select>
         </label>
-        <label for="bio">Provide a bio:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+         <label for="referrer">How much do you invest?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Less than $100</option>
+            <option value="2">Between $100 and $300</option>
+            <option value="3">Between $300 and $500</option>
+            <option value="4">Between $500 and $1000</option>
+            <option value="5">Between $1000 and $3000</option>
+            <option value="6">Between $3000 and $5000</option>
+            <option value="7">Between $5000 and $10000</option>
+            <option value="8">More than $10000</option>
+            <option value="10">Other</option>
+          </select>
         </label>
+         <fieldset>
+        <legend> Do you invest in crypto ?(required)</legend>
+        <label for="crypto-yes"><input id="crypto-yes" type="radio" name="crypto" value= "1" class="inline" checked /> Yes</label>
+        <label for="crypto-no"><input id="crypto-no" type="radio" name="crypto" value= "2" class="inline" /> No</label>
       </fieldset>
-      <label for="terms-and-conditions">
-        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.register-club.org/terms-of-service/">terms and conditions</a>
+       <fieldset>
+        <legend> Would you like to receive the information about your investment options? (required)</legend>
+        <label for="info-yes"><input id="info-yes" type="radio" name="info" value= "1" class="inline" checked /> Yes</label>
+        <label for="info-no"><input id="info-no" type="radio" name="info" value= "2" class="inline" /> No </label>
+      </fieldset>
+       <label for="bio"> Questions or comments to our team
+          <textarea id="questions-comments" name="questions-comments" rows="3" cols="30" placeholder="I would like to find out more about..."></textarea>
+        </label>
+       <label for="terms-and-conditions">
+        <input class="inline" id="submit-info" type="checkbox" value="submit-info" required name="submit-info" /> I submit the information</a>
       </label>
-      <input type="submit" value="Submit" />
+       <input type="submit" value="Submit" />
+       <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" value="terms-and-conditions" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+       <input type="submit" id="submit" value="Submit" />
+        <footer>
+           <hr class="bottom-line">
+<p class="Legality">No Copyright - <a href="https://www.etrade.com">For more investment options click here</a></p>
+          </footer>
+      </section>
+    </main>
+    </div>
     </form>
-  </body>
-</html>
+</body>
